@@ -90,7 +90,7 @@ $(document).ready(function(){
 			if (bandera == false) {
 				$.ajax({
 					type:"GET",
-					url:"http://localhost:8080/Asignatura",
+					url:"http://gestiondecalificacionesfacci.azurewebsites.net/Asignatura",
 					dataType:"json",
 					contentType:"text/plain"
 				}).done(function(msg){
@@ -111,7 +111,7 @@ $(document).ready(function(){
 									datos = {Asignatura:asignatura , Creditos:creditos , Docente:docente , Id:codigo}				
 									$.ajax({
 							           	type:"POST",
-							           	url:"http://localhost:8080/Asignatura",
+							           	url:"http://gestiondecalificacionesfacci.azurewebsites.net/Asignatura",
 							            dataType:"text",
 							            contentType:"application/json",
 							            data: JSON.stringify(datos)
@@ -155,7 +155,7 @@ $(document).ready(function(){
 				datos={"Id":idmodificar , Asignatura:asignatura , Creditos:creditos , Docente:docente};
 				$.ajax({
 				    type:"PUT",
-					url:"http://localhost:8080/Asignatura",
+					url:"http://gestiondecalificacionesfacci.azurewebsites.net/Asignatura",
 					dataType:"text",
 					contentType:"application/json",
 					data:JSON.stringify(datos)
@@ -174,7 +174,7 @@ $(document).ready(function(){
 				tablaAsignatura+='<table border="1px" class="tablaConsulta"><tr><th class="thcalificacion">Código</th><th class="thcalificacion">Asignatura</th><th class="thcalificacion">Docente</th><th class="thcalificacion">Creditos</th></tr>'
 			$.ajax({
 	            type:"GET",
-	            url:"http://localhost:8080/Asignatura",
+	            url:"http://gestiondecalificacionesfacci.azurewebsites.net/Asignatura",
 	            dataType:"json",
 	            contentType:"text/plain"
             }).done(function(msg){
@@ -195,7 +195,7 @@ $(document).ready(function(){
 			        var idmodificar=$("#modificarEliminar").val();
 			        $.ajax({
 				        type:"GET",
-				        url:"http://localhost:8080/Asignatura",
+				        url:"http://gestiondecalificacionesfacci.azurewebsites.net/Asignatura",
 				        dataType:"json",
 				        contentType:"text/plain"
 			        }).done(function(msg){
@@ -218,7 +218,7 @@ $(document).ready(function(){
 
 				        $.ajax({
 				            type:"DELETE",
-				            url:"http://localhost:8080/Asignatura",
+				            url:"http://gestiondecalificacionesfacci.azurewebsites.net/Asignatura",
 				            dataType:"text",
 				            contentType:"application/json",
 				            data:JSON.stringify(datos)
@@ -355,7 +355,7 @@ $(document).ready(function(){
 				datos = {Nombre:nombre , Apellido:apellido , Cedula:cedula , Paralelo:paralelo , Curso:curso , Correo:correo , Telefono:telefono , FechaNac:fechaNac}				
 				$.ajax({
 	               	type:"POST",
-	              	url:"http://localhost:8080/Estudiante",
+	              	url:"http://gestiondecalificacionesfacci.azurewebsites.net/Estudiante",
 	               	dataType:"text",
 	               	contentType:"application/json",
 	               	data: JSON.stringify(datos)
@@ -436,7 +436,7 @@ $(document).ready(function(){
 			alert("bryan")
 			$.ajax({
 		            type:"GET",
-		            url:"http://localhost:8080/Asignatura",
+		            url:"http://gestiondecalificacionesfacci.azurewebsites.net/Asignatura",
 		            dataType:"json",
 		            contentType:"text/plain"
 	            }).done(function(msg){
@@ -454,7 +454,7 @@ $(document).ready(function(){
 			alert("bryan")
 			$.ajax({
 		            type:"GET",
-		            url:"http://localhost:8080/Estudiante",
+		            url:"http://gestiondecalificacionesfacci.azurewebsites.net/Estudiante",
 		            dataType:"json",
 		            contentType:"text/plain"
 	            }).done(function(msg){
