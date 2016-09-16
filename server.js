@@ -1,7 +1,7 @@
 'use strict'
 const express = require('express')
 const http = require('http')
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 const bodyParser=require('body-parser')
 const Firebase= require('firebase')
 let items=[]
