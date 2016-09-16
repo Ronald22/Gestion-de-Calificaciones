@@ -1,16 +1,19 @@
- <project name="Proyecto">
-        <target name="init">
-                <mkdir dir="classes" />
-                <mkdir dir="build" />
-        </target>
-        <target name="compile" depends="init">
-                <javac srcdir="src" destdir="classes" />
-        </target>
-        <target name="build" depends="compile">
-                <jar destfile="build/proyecto.jar" basedir="classes" />
-        </target>
-        <target name="clean">
-                <delete dir="classes" />
-                <delete dir="build" />
-        </target>
+<?xml version="1.0"?>
+<project name="Mi_Proyecto" default="todo">
+
+   <target name="todo" depends="empaqueta, documenta">
+   </target>
+
+   <target name="empaqueta" depends="compila">
+      <jar destfile="../jar/fichero.jar" includes="../class/**/*.class"/>
+   </target>
+
+   <target name="compila">
+      <javac srcdir="." destdir="../class"/>
+   </target>
+
+   <target name="documenta">
+      <javadoc sourcepath="." destfile="../javadoc" packagenames="*"/>
+   </target>
+
 </project>
