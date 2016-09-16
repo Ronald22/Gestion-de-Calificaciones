@@ -1,0 +1,506 @@
+body{
+  margin: 0;	
+  font-family:Georgia, Times, "Times New Roman", serif;
+}
+
+header{
+	background: url("imgFacci.jpg") no-repeat;
+	background-size: 100% 100.3%;
+	height: 275px
+}
+
+a{
+	text-decoration: none
+}
+#box{
+	background: whitesmoke;
+	margin: 30px auto ;
+	padding: 0 20px 15px ;
+	width: 90%;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+#hr{
+	border: 1px solid #eee;
+	width: 97%;
+	margin-top:25px;
+	margin-bottom: 25px; 
+}
+
+/*--------------------INDEX--------------------*/
+#sectionindex{
+	margin: 30px 0;
+}
+
+#h1index{
+	text-align: center;
+	font-size: 36px;
+}
+
+#pindex{
+	margin: 10px 0;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+	font-weight: bolder;
+	font-size: 15px;
+	font-family: 'Helvetica';
+}
+
+#btnasignatura{
+	margin: 0 0 0 135px
+}
+
+.buttonindex{
+	margin: 0 0 0 135px;
+	border-radius: 4px;
+	width: 250px ; height: 50px;
+	background-color: #5489D0;
+	border: 1px solid #3E6491;
+	color: #1E4F92;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+	font-weight: bolder;
+	font-size: 15px;
+	-moz-box-shadow:inset 0px 0px 1px rgba(79,122,162,1);
+	-webkit-box-shadow:inset 0px 0px 1px rgba(79,122,162,1);
+	box-shadow:inset 0px 0px 1px rgba(79,122,162,1);
+	background-image: -o-linear-gradient(90deg , rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: linear-gradient(90deg , rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+}
+
+.buttonindex:hover{
+	background-color: #86B1EC;
+	background-image: -o-linear-gradient(90deg , rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: linear-gradient(90deg , rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+}
+
+.buttonindex:active{
+    background-color: #2964B4;
+	-moz-box-shadow:inset 0px 0px 5px rgba(79,122,162,1);
+	-webkit-box-shadow:inset 0px 0px 5px rgba(79,122,162,1);
+	box-shadow:inset 0px 0px 5px rgba(79,122,162,1);
+	background-image: -o-linear-gradient(90deg , rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: linear-gradient(90deg , rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	text-shadow: none;
+}
+
+/*-----------------------ASIGNATURA---------------------*/
+#h2asignatura{
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;  
+}
+
+#formasignatura{
+	margin: 15px 0 0 0;
+}
+
+.labelasignatura{
+	font-family: 'Helvetica';
+	font-size: 15px;
+	margin: 10px 0;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+.inputasignatura{
+	border: 1px solid #aaa; 
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset; 
+	border-radius: 2px; 
+	padding-right: 30px; 
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s; 
+	transition: padding .25s; 
+	height: 30px; width: 270px; 
+	padding: 5px 8px; 
+	margin: 10px 30px; 
+	font-size: 16px
+}
+
+.inputasignatura1{
+	border: 1px solid #aaa; 
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset; 
+	border-radius: 2px; 
+	padding-right: 30px; 
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s; 
+	transition: padding .25s; 
+	height: 30px; width: 270px; 
+	padding: 5px 8px; 
+	margin: 10px 30px; 
+	font-size: 16px
+}
+
+.tdValidarAsignatura{
+  background: red;
+	border-radius: 4px;
+	padding: 2px 5px;
+	font-size: 14px; color: blanchedalmond ;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+	position: absolute;
+	width: 164px ;
+	top: 15px; left:-270% 
+}
+#trcodigo{position: relative}
+#trAsignatura{position: relative }
+#trdocente{position: relative }
+#trcredito{position: relative }
+#tdNombre{position: relative }
+#tdApellido{position: relative }
+#tdCedula{position: relative }
+#tdParalelo{position: relative }
+
+.div{
+	position:absolute;
+	top:20px; left:-600% ;
+	border-top: 4px transparent solid;
+  	border-bottom: 4px transparent solid;
+  	border-right: 12px red solid;
+  	border-left: 15px transparent solid;
+}
+
+.btnCrud{
+	border-radius: 4px;
+	font-weight: bolder;
+	font-size: 15px;
+	height: 40px; width: 125px; 
+	margin: 15px  15px 15px 5px; 
+	background-color: #85DD7C;
+	border: 1px solid #158D34;
+	-moz-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	-webkit-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	background-image: -o-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	color: #1d7819;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+
+.btnCrud:first-of-type{
+	margin-left: 142px;
+}
+
+
+.btnCrud:hover {
+	background-color.btnCrud: #A7ED9E;
+	background-image: -o-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+}
+
+.btnCrud:active {
+	background-color: #5DC34E;
+	-moz-box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	-webkit-box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	background-image: -o-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	text-shadow: none;
+}
+
+.btnCrud2{
+	border-radius: 4px;
+	font-weight: bolder;
+	font-size: 15px;
+	height: 40px; width: 125px; 
+	margin: 25px  15px 15px 0px; 
+	background-color: #85DD7C;
+	border: 1px solid #158D34;
+	-moz-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	-webkit-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	background-image: -o-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	color: #1d7819;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+
+
+
+.btnCrud2:hover {
+	background-color.btnCrud: #A7ED9E;
+	background-image: -o-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+}
+
+.btnCrud2:active {
+	background-color: #5DC34E;
+	-moz-box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	-webkit-box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	background-image: -o-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	text-shadow: none;
+}
+/*-----------------------ESTUDIANTES----------------------*/
+#h2estudiante{
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;  
+}
+
+#formestudiante{
+	margin: 15px 0 0 0;
+}
+
+.labelestudiante{
+	font-family: 'Helvetica';
+	font-size: 15px;
+	margin: 10px 0;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+.inputestudiante{
+	border: 1px solid #aaa; 
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset; 
+	border-radius: 2px; 
+	padding-right: 30px; 
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s; 
+	transition: padding .25s; 
+	height: 30px; width: 270px; 
+	padding: 5px 8px; 
+	margin: 10px 50px; 
+	font-size: 16px
+}
+
+.inputestudiante1{
+	border: 1px solid #aaa; 
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset; 
+	border-radius: 2px; 
+	padding-right: 30px; 
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s; 
+	transition: padding .25s; 
+	height: 30px; width: 270px; 
+	padding: 5px 8px; 
+	margin: 10px 50px; 
+	font-size: 16px
+}
+#mostrarlista{
+	border-radius: 4px;
+	font-weight: bolder;
+	font-size: 15px;
+	height: 40px; width: 225px; 
+	margin: 5px 265px; 
+	background-color: #636877;
+	border: 1px solid #3D3E48;
+	-moz-box-shadow:inset 0px 0px 1px rgba(95,99,113,1);
+	-webkit-box-shadow:inset 0px 0px 1px rgba(95,99,113,1);
+	box-shadow:inset 0px 0px 1px rgba(95,99,113,1);
+	background-image: -o-linear-gradient(90deg , rgb(98,106,123) 0%, rgb(137,140,150) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(98,106,123) 0%, rgb(137,140,150) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(98,106,123) 0%, rgb(137,140,150) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(98,106,123) 0%, rgb(137,140,150) 100%);
+	background-image: linear-gradient(90deg , rgb(98,106,123) 0%, rgb(137,140,150) 100%);
+	color: #FFFFFF;
+	text-shadow: rgba(0,0,0,0.5) 0px -1px 0px;
+}
+
+#mostrarlista:hover {
+	background-color: #727580;
+	background-image: -o-linear-gradient(90deg , rgb(117,124,140) 0%, rgb(158,162,173) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(117,124,140) 0%, rgb(158,162,173) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(117,124,140) 0%, rgb(158,162,173) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(117,124,140) 0%, rgb(158,162,173) 100%);
+	background-image: linear-gradient(90deg , rgb(117,124,140) 0%, rgb(158,162,173) 100%);
+}
+
+#mostrarlista:active {
+	background-color: #4F5566;
+	-moz-box-shadow:inset 0px 0px 5px rgba(95,99,113,1);
+	-webkit-box-shadow:inset 0px 0px 5px rgba(95,99,113,1);
+	box-shadow:inset 0px 0px 5px rgba(95,99,113,1);
+	background-image: -o-linear-gradient(90deg , rgb(137,140,150) 0%, rgb(98,106,123) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(137,140,150) 0%, rgb(98,106,123) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(137,140,150) 0%, rgb(98,106,123) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(137,140,150) 0%, rgb(98,106,123) 100%);
+	background-image: linear-gradient(90deg , rgb(137,140,150) 0%, rgb(98,106,123) 100%);
+	text-shadow: none;
+}
+
+/*------------------------CALIFICACION------------------------*/
+#h2calificacion{
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;  
+}
+
+#formcalificacion{
+	margin: 15px 0 0 0;
+}
+
+.labelcalificacion{
+	font-family: 'Helvetica';
+	font-size: 15px;
+	margin: 10px 0;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+	font-weight: bolder;
+	font-size: 18px;
+}
+.label2calificacion{
+    font-family: 'Helvetica';
+	font-size: 14px;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+	font-weight: bolder;
+}
+
+.spancalificacion{
+	color: darkred;
+}
+
+.inputcalificacion{
+	border: 1px solid #aaa; 
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset; 
+	border-radius: 2px; 
+	padding-right: 30px; 
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s; 
+	transition: padding .25s; 
+	height: 30px; width: 270px; 
+	padding: 5px 8px; 
+	margin: 10px 50px; 
+	font-size: 16px
+}
+
+.tablaConsulta{
+	width: 100%;
+	margin-top:10px;
+	border-color: black;
+	font-family: initial;
+	font-size: 17px;
+}
+
+.inpCal{
+	width: 20%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.tdcalificacion{
+	width: 11%;
+	text-align: center;
+}
+
+.inputresultado{
+	width: 11%;
+	text-align: center;
+}
+
+.tdCalificacionCedula{
+	width: 14%;
+	text-align: center;
+}
+
+.thcalificacion{
+  background: darkseagreen;
+	border-color: black;
+}
+
+.trcalificacion{
+	background: white;
+}
+
+#btnenviar1{
+	border-radius: 4px;
+	font-weight: bolder;
+	font-size: 15px;
+	height: 40px; width:20%; 
+	margin: 10px 39.99%; 
+	background-color: #85DD7C;
+	border: 1px solid #158D34;
+	-moz-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	-webkit-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	background-image: -o-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	color: #1d7819;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+
+#btnenviar1:hover {
+	background-color: #A7ED9E;
+	background-image: -o-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+}
+
+#btnenviar1:active {
+	background-color: #5DC34E;
+	-moz-box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	-webkit-box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	background-image: -o-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	text-shadow: none;
+}
+/*-----------------------PIE DE PAGINA------------------*/
+#pie_pagina{
+    width: 100%;
+    background-color: #363839;
+    color: lightgray
+}
+.p1{
+    /*!  */
+    margin-bottom: 10px;
+    height: 90%;
+    padding-top: 10px;
+}
+
+hr{
+    border: solid 0.1px white;
+}
+.hr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 0 20px 0 20px;
+    text-align: center
+}
+.derechos{
+    padding: 5px 0 10px 0;  
+}
+
+span{
+	font-weight: bolder
+}
