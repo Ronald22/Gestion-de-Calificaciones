@@ -15,7 +15,6 @@ $(document).ready(function(){
             asignatura+=''
             asignatura+='</form></article><article class="contenido2" ></article></section>'
 		$("#contenido").html(asignatura)
-		$("#txtcodigo").focus()
 
 		//valida el ingreso de solo letras en la entrada "asignatura" y "docente"
 		$(".inputasignatura").each(function() {
@@ -79,7 +78,7 @@ $(document).ready(function(){
 	        else { $("#txtcredito").css({"border-color": "#28921f", 'box-shadow': '0 0 5px #5cd053' }) }
 		})
 
-		//Metodo Insertar Datos
+		//Metodo Insertar y Modificar Datos
 		$("#btnenviar").click(function(){	
 			var bandera1 = false , bandera2 = false 
 			var codigo = $("#txtcodigo").val()
@@ -87,6 +86,7 @@ $(document).ready(function(){
 			var docente = $("#txtdocente").val()
 			var creditos = $("#txtcredito").val()
 			var idmodificar=$("#modificarEliminar").val();
+			//utilizamos una bandera, si es falsa se realiza el proceso de insertar datos  
 			if (bandera == false) {
 				$.ajax({
 					type:"GET",
@@ -94,16 +94,19 @@ $(document).ready(function(){
 					dataType:"json",
 					contentType:"text/plain"
 				}).done(function(msg){
+					//recorre y compara los valores de entrada con los datos de la BD para impedir datos repetidos
 					for(var dato in msg[0]){
 						if (msg[0][dato].Id == codigo){bandera1 = true}
 						if (msg[0][dato].Asignatura == asignatura){bandera2 = true}
 					}	
+					//utilizamos dos banderas mas, si son verdaderas nos muestra la alerta de ingresar nuevos datos
 					if (bandera1 == true && bandera2 == true) {alert("El código y la Asignatura ya estan registrados en el sistema,por favor ingrese nuevos datos")}
 					else{
 						if (bandera1 == true) {alert("El código ya esta registrado en el sistema,por favor ingrese un nuevos código")}
 						else{
 							if (bandera2 == true){alert("La asignatura ya esta registrada en el sistema,por favor ingrese una nueva asignatura")}
 							else{
+								//si las banderas son falsas comienza el proceso de validación e inserción de datos 
 								if (asignatura!="" && docente!="" && creditos!="" && codigo!="") {				
 									datos = {Asignatura:asignatura , Creditos:creditos , Docente:docente , Id:codigo}				
 									$.ajax({
@@ -146,6 +149,7 @@ $(document).ready(function(){
 					}
 				})
 			}
+			//si la primer bandera es verdadera realiza el proceso de modificar datos 
 			if (bandera == true) {
 				
 				datos={"Id":idmodificar , Asignatura:asignatura , Creditos:creditos , Docente:docente};
