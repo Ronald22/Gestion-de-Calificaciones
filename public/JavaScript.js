@@ -3,7 +3,7 @@ $(document).ready(function(){
 	bandera = false
 	//genera el formulario de asignatura al hacer click en el boton ingreso de asignatura 
 	$("#btnasignatura").click(function(){
-		var asignatura = '<hr id="hr"><section id="sectionindex"><h2 id="h2asignatura">INGRESO DE ASIGNATURAS</h2><article id="box">'
+		var asignatura ='<hr id="hr"><section id="sectionindex"><h2 id="h2asignatura">INGRESO DE ASIGNATURAS</h2><article id="box">'
 			asignatura+='<form id="formasignatura" action=""><table><tr><td><label class="labelasignatura" for="codigo">Código</label></td><td><input class="inputasignatura1" type="text" value="" name="codigo" id="txtcodigo" placeholder="codigo de la asignatura">'
 			asignatura+='</td><td id="trcodigo"></td></tr><tr><td><label class="labelasignatura" for="asignatura">Asignatura</label></td>'
 			asignatura+='<td><input class="inputasignatura" type="text" value="" name="asignatura" id="txtasignatura" placeholder="nombre de la asignatura" required>'
@@ -170,7 +170,7 @@ $(document).ready(function(){
 		})	
 
 		$("#btnconsultar").click(function(){
-			var tablaAsignatura ='<h2 id="h2asignatura">CONSULTA DE ASIGNATURAS</h2><article id="box"><input type="button" value="Eliminar" id="btneliminar" class="btnCrud2"><input type="button" value="Modificar" id="btnmodificar" class="btnCrud2"><input class="inputasignatura1" type="text" id="modificarEliminar" size="14px" placeholder="Ingrese el codigo del dato a eliminar o modificar">'
+			var tablaAsignatura ='<hr id="hr"><h2 id="h2asignatura">CONSULTA DE ASIGNATURAS</h2><article id="box"><input type="button" value="Eliminar" id="btneliminar" class="btnCrud2"><input type="button" value="Modificar" id="btnmodificar" class="btnCrud2"><input class="inputasignatura1" type="text" id="modificarEliminar" size="14px" placeholder="Ingrese el codigo del dato a eliminar o modificar">'
 				tablaAsignatura+='<table border="1px" class="tablaConsulta"><tr><th class="thcalificacion">Código</th><th class="thcalificacion">Asignatura</th><th class="thcalificacion">Docente</th><th class="thcalificacion">Creditos</th></tr>'
 			$.ajax({
 	            type:"GET",
