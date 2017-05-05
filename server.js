@@ -7,6 +7,26 @@ const Firebase= require('firebase')
 let items=[]
 let contador=0
 
+/*----------------------------Administrador--------------------------------*/
+let miAdministrador= new Firebase('https://gestion-de-calificaciones.firebaseio.com/Administrador')
+let rutaAdministrador=express.Router()
+rutaAdministrador.use(bodyParser())
+rutaAdministrador.route('/')
+.get(function(request,response){
+    items=[]
+    miAdministrador.once("value",function(snap){
+        var nuevoAdministrador=snap.val()
+        items.push(nuevoAdministrador)
+        console.log(contador++)
+        return response.send(items)
+     })
+})
+
+.put(function(req,res,next){
+    miAsignatura.child(req.body.Id).set(req.body)
+    res.status(200).send("La asignatura "+req.body.Id+" fue modificada")
+});
+
 /*----------------------------Asignatura--------------------------------*/
 let miAsignatura= new Firebase('https://gestion-de-calificaciones.firebaseio.com/Asignatura')
 let rutaAsignatura=express.Router()
@@ -111,6 +131,7 @@ rutaCalificacion.route('/')
 
 
 let app = express()
+.use('/Administrador',rutaAdministrador)
 .use('/Asignatura',rutaAsignatura)
 .use('/Estudiante',rutaEstudiante)
 .use(express.static(__dirname+'/public'))
